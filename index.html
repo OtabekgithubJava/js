@@ -9,18 +9,27 @@
 </head>
 <body>
 
-    <div class="container">
-        <span>Testing Mathematics</span>
+<div class="container">
+    <span>Testing Mathematics</span>
+    <div>
         <button onclick="refresh()" type="button" class="btn btn-primary">🔄</button>
-        <div>
-            <label type="button" id="round1" class="btn btn-primary">8</label> +
-            <label type="button" id="round2" class="btn btn-primary">6</label> =
-            <input type="text" name="" id="" placeholder="Guess the results">
-        </div>
-        <button onclick="check()" type="button" class="btn btn-primary">check</button>
+        <button onclick="check()" type="button" class="btn btn-primary">Check</button>
     </div>
+    <div>
+        <label type="button" id="round1" class="btn btn-primary"></label>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <label type="button" id="round2" class="btn btn-primary"></label> =
+        <input type="text" name="" id="userAnswer" placeholder="Guess the result">
+    </div>
+</div>
 
-    <script src="script.js"></script>
-    
+<script src="script.js"></script>
+
 </body>
 </html>
